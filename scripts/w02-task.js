@@ -4,13 +4,11 @@ const fullName = "Luke Ramirez";
 /* Step 2 - Variables */
 
 let currentYear = "2023";
-let profilePicture = 'images\Resized_20230919_103135.jpeg'
-
 
 /* Step 3 - Element Variables */
 
 const nameElement = document.getElementById('name');
-const foodElement = document.getElementById('food');
+const foodElement = document.getElementById('favoriteFood');
 const yearElement = document.querySelector("#year");
 
 
@@ -24,9 +22,10 @@ imageElement.setAttribute('alt', profilePicture);
 imageElement.innerHTML = `pr0file image of ${fullName}`;
 
 /* Step 5 - Array */
-let favoriteFood = ['watermellon', 'chicken', 'rice', 'chips'];
+const foodList = ["watermelon", "chicken", "rice", "chips"];
+let foodString = foodList.toString();
 
-foodElement.innerHTML = `favorite foods: ${favoriteFood}`
-const singleFood = 'peach';
-foodElement.innerHTML += `<br>$favFoods}`;
+foodElement.innerHTML = foodList.toString();
+//const singleFood = 'peach';
+//foodElement.innerHTML += `<br>${favoriteFoods}`;
 
